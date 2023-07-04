@@ -1,45 +1,179 @@
+:root {
+  --mediumBlue:#306BB3;
+  --buttomColor:#FFFF;
+
+}
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    list-style: none;
-    text-decoration: none;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
 
-  section{
-    align-content: center;
-    flex-direction: colum;
-    align-items: center;
-    margin-top: 5%;
-    padding: 5%;
-  }
+header {
+  background-color: var(--mediumBlue);
+  color: var(--link-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 0;
+}
 
-  .container {
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(4,25%);
-    margin: 5% auto;
-  }
+nav>ul{
+  display: flex;
+  margin: 0 1%;
+  justify-content: space-between;
+}
 
-  .pokeCard{
-    background-color: #dee5ed;
-    padding: 4%;
-    border: none;
-    border-radius: 10px;
-    margin: 5% 0;
-    width: 90%;
+nav{
+  width: 60%;
+}
+
+nav>ul>li>a{
+  color: white;
+}
+
+header>div{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header>div>button{
+  padding: 2%;
+  background-color: var(--buttomColor);
+  border-radius: 10px;
+  border-style: none;
+  font-weight: bold;
+  color: var(--mediumBlue);
+}
+header>div>button:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+nav>ul>li>a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.headerLogo{
+  height: 90%;
+  align-self: center;
+  margin-left:2rem;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.navFilter {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.type {
+  color: #1a202c99;
+  margin: 2% 0px;
+  width: 100%;
+  padding-bottom: 1%;
+  margin-bottom: 1%;
+  border-bottom: 2px solid #90a3bf;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4,25%);
+  margin: 5% auto;
+}
+
+.pokeCard{
+  background-color: #dee5ed;
+  padding: 4%;
+  border: none;
+  border-radius: 10px;
+  margin: 5% 0;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.imgPoke{
+  background-color: white;
+  border-radius: 4px;
+}
+
+.pokeCard.hidden {
+  display: none;
+}
+  .tituloarticulo {
+
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    margin: 100px;
+    gap:30px;
   }
+  .tituloarticulo>h1 {
+    color: var(--mediumBlue);
+    font-size: 3em;
+    font-weight: 500;
+  }
+  ul {
+    list-style: none;
+}
 
-  .imgPoke{
-    background-color: white;
-    border-radius: 4px;
-  }
-  .navFilter {
+footer {
+    padding: 5%;
+    background-color: var(--mediumBlue);
     display: flex;
     justify-content: space-between;
-    width: 90%;
-  }
+}
+
+footer>div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: var(--buttomColor)
+}
+
+footer>div:last-child {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.footer_links>p {
+    color: white;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.footer_links>ul {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer_links>ul>li>a {
+    color: white;
+}
+
+.social_media {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    width: 20%;
+}
