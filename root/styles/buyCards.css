@@ -54,6 +54,40 @@ header>div>button:hover{
   opacity: 0.8;
   cursor: pointer;
 }
+.headerCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5%;
+
+}
+.headerCard>p{
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.headerCard>i{
+  font-size: 1.5em;
+}
+.footerCard{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5%;
+}
+
+.footerCard>p{
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.footerCard>button{
+  width: 35%;
+  height: 130%;
+  border-radius: 5%;
+  color: var(--buttomColor);
+  background-color: var(--mediumBlue);
+  border:none;
+}
+
 
 nav>ul>li>a:hover{
   text-decoration: underline;
@@ -77,7 +111,11 @@ section {
   justify-content: space-around;
   width: 90%;
 }
+.navFilter>a:hover{
+  cursor: pointer;
+  color: #000000;
 
+}
 .type {
   color: #1a202c99;
   margin: 2% 0px;
