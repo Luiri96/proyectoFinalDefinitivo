@@ -1,0 +1,134 @@
+
+  :root {
+    --mediumBlue:#306BB3;
+    --buttomColor:#FFFF;
+  
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  header {
+    background-color: var(--mediumBlue);
+    color: var(--link-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 0;
+  }
+  
+  nav>ul{
+    display: flex;
+    margin: 0 1%;
+    justify-content: space-between;
+  }
+  
+  nav{
+    width: 60%;
+  }
+  
+  nav>ul>li>a{
+    color: white;
+  }
+  
+  header>div{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  header>div>button{
+    padding: 2%;
+    background-color: var(--buttomColor);
+    border-radius: 10px;
+    border-style: none;
+    font-weight: bold;
+    color: var(--mediumBlue);
+  }
+  header>div>button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  main {
+    display: flex;
+    padding: 80px 30px;
+    align-items: center;
+  }
+  
+  section {
+    width: 50%;
+  }
+  
+  main > img {
+    width: 50%;
+  }
+  
+  section > article {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 90%;
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+  
+  section > article > div > a {
+    color: black;
+    padding: 30px;
+    font-weight: bold;
+  }
+  
+  footer {
+    padding: 5%;
+    background-color: var(--mediumBlue);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: var(--buttomColor)
+}
+
+footer>div:last-child {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.footer_links>p {
+    color: white;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.footer_links>ul {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer_links>ul>li>a {
+    color: white;
+}
+
+.social_media {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    width: 20%;
+}
