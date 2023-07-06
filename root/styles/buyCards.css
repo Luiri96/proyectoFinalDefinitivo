@@ -110,20 +110,25 @@ section {
   display: flex;
   justify-content: space-around;
   width: 90%;
+  margin-bottom: 3%;
 }
-.navFilter>a:hover{
-  cursor: pointer;
-  color: #000000;
 
-}
 .type {
-  color: #1a202c99;
   margin: 2% 0px;
   width: 100%;
   padding-bottom: 1%;
   margin-bottom: 1%;
   border-bottom: 2px solid #90a3bf;
   text-align: center;
+}
+.type:hover{
+  cursor: pointer;
+  color: #000000;
+  font-weight: bold;
+  border-bottom: 4px solid#1A202C;
+
+
+
 }
 
 .container {
@@ -168,6 +173,23 @@ section {
   }
   ul {
     list-style: none;
+}
+.showmorecards{
+  margin: 5%;
+  padding: 5%;
+  display: felx;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+#showmorebtn{
+  padding: 1%;
+  background-color: var(--mediumBlue);
+  border-radius: 5%;
+  font-weight: bold;
+  color: var(--buttomColor);
+  width: 12%;
 }
 
 footer {

@@ -1,9 +1,12 @@
-let url = "https://pokeapi.co/api/v2/pokemon";
+let url = "https://pokeapi.co/api/v2";
+let offset = 1;
+let limit = 8;
 
 const getpokemon = async () => {
     try {
-        const res = await fetch(url);
+        const res = await fetch(`${url}/pokemon?offset=${offset}&limit=${limit} `);
         const data = await res.json();
+        console.log(data);
 
         data.results.forEach(async(pokemon) => {
             const respons = await fetch(pokemon.url);
@@ -41,7 +44,7 @@ const getpokemon = async () => {
     }
 }
 
-getpokemon();
+getpokemon(offset,limit);
 
 
 const filter = document.querySelectorAll('.type');
@@ -67,3 +70,12 @@ filter.forEach((filterType) => {
       }
     });
   };
+
+  const showMoreCards = document.getElementById('showmorebtn');
+  showMoreCards.addEventListener("click",()=> {
+    offset += 8;
+    getpokemon(offset,limit);
+  
+  }
+  )
+  
