@@ -191,6 +191,16 @@ section {
   color: var(--buttomColor);
   width: 12%;
 }
+.darkMode{
+  background-color: black;
+  color: aliceblue;
+}
+.darkMode .tituloarticulo h1{
+  color: aliceblue;
+}
+.darkMode .navFilter .type li a{
+  color:aliceblue;
+}
 
 footer {
     padding: 5%;
